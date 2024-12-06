@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <form>
+    <div class="form-group">
+      <!--Q1-->
+      <label class="required">What are you listing today?</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="type" value="product"> Product</label>
+        <label><input type="checkbox" name="type" value="service"> Service</label>
+      </div>
+    </div>
+
+    <!--Q2-->
+    <div class="form-group">
+      <label>Upload a cover image:</label>
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" data-tooltip="Upload"> Upload </button>
+      </div>
+    </div>
+
+    <!--Q3-->
+    <div class="form-group">
+      <label class="required">Title of Listing:</label>
+      <input type="text">
+    </div>
+
+    <div class="form-group">
+        <label class="required">Service Categories (up to 5):</label>
+        <select id="categories" multiple size="5"> 
+          <option value="#">Beauty & Personal Care</option>
+          <option value="#">Entertainment</option>
+          <option value="#">Event Planning</option>
+          <option value="#">Fashion</option>
+          <option value="#">Food</option>
+          <option value="#">Health & Fitness</option>
+          <option value="#">Home & Living</option>
+          <option value="#">Sports</option>
+          <option value="#">Technology</option>
+        </select>
+      </div>
+
+      <!--Q4-->
+    <div class="form-group">
+      <label class="required">Description:</label>
+      <textarea rows="4"></textarea>
+    </div>
+
+    <!--Q5-->
+    <div class="form-group">
+      <label class="required">Location:</label>
+      <input type="text">
+    </div>
+
+    <!--Q6-->
+    <div class="form-group">
+      <label class="required">Price:</label>
+      <input type="text">
+    </div>
+
+    <!--Q7-->
+    <div class="form-group">
+      <label class="required">Payment Methods:</label>
+      <input type="text">
+    </div>
+
+    <!--last two buttons-->
+    <div class="btn-group">
+        <button type="button" class="btn btn-secondary" data-tooltip="Save">Save Draft</button>
+        <button type="submit" class="btn btn-primary" data-tooltip="Submit">Post</button>
+      </div>
+  </form>
+</div>
+
+<!--navbar-->
+<nav class="nav">
+  <a href="#" class="nav-item" >Home</a>
+  <a href="#" class="nav-item">Saved Items </a>
+  <a href="#" class="nav-item">Profile</a>
+</nav>
+</body>
+</html>
