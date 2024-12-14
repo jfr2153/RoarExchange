@@ -586,7 +586,7 @@ input[type="text"], select, textarea {
 
 .card-text-user {
   margin-bottom: 5px;
-  font-size: 12px;
+  font-size: 15px;
   color: #595858;
 =======
   background: #dceeff;
@@ -596,19 +596,26 @@ input[type="text"], select, textarea {
 }
 
 .card-text {
-  font-size: 16px;
+  font-size: 19px;
   color: #333;
 }
 
 <<<<<<< HEAD
 .card-text-small {
   margin-top: 30px;
-  font-size: 10px;
+  font-size: 14px;
   color: #4d4c4c;
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> b716cf3 (Created static home page)
+=======
+.service-icon{
+  font-size: 23px;
+}
+
+>>>>>>> 6332677 (styling changes)
 .home-page .container {
   margin-top: -40px;
 }

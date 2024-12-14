@@ -11,7 +11,7 @@
     
     // Update the button based on bookmark status
     if (isBookmarked) {
-      bookmarkButton.textContent = "💖 Saved";
+      bookmarkButton.textContent = "✅ Saved";
     }
   
     // Toggle bookmark status when the button is clicked
@@ -20,11 +20,11 @@
       
       if (currentStatus === "true") {
         localStorage.setItem(pieListingId, "false");
-        bookmarkButton.textContent = "💖 Save";
+        bookmarkButton.textContent = "✓ Save";
         alert("This listing has been removed from your Saved Items in History.");
       } else {
         localStorage.setItem(pieListingId, "true");
-        bookmarkButton.textContent = "💖 Saved";
+        bookmarkButton.textContent = "✅ Saved";
         alert("This listing has been added to your Saved Items in History.");
       }
     });
