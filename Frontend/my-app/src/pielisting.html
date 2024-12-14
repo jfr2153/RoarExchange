@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!--Navbar-->
+<nav class="nav">
+  <div class="nav-item logo">
+    <a href="homepage.html">
+      <img src="logo.png" alt="Logo" class="logo-img">
+    </a>
+  </div>
+  <div class="nav-item profile">
+    <div class="dropdown">
+      <img src="profile-icon.png" alt="Profile" class="profile-img" id="profileIcon">
+      <ul class="dropdown-menu" id="dropdownMenu">
+        <li><a href="profilepage.html">Profile</a></li>
+        <li><a href="historypage.html">History</a></li>
+        <li><a href="mylistings.html">Postings</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--Bookmark Section-->
+<div class="bookmark-section">
+    <button id="bookmarkButton" class="btn-listing" data-tooltip="Save"> 💖 Save </button>
+</div>
+
+<!--Header-->
+<div class="container-service">
+    <div class="listing-header-service">
+        <div>
+            <h1 class="listing-title-service">
+                Madé's Pies 🥧
+                <span class="location">  📍 Wein Hall</span>
+            </h1>
+        </div>
+        <div class="timestamp"> 1 Month Ago </div>
+    </div>
+
+
+<!--Images-->
+    <div class="gallery-service">
+        <div class="gallery-item-service" style="background-image: url('./listingimages/pie.jpg');"></div>
+        <div class="gallery-item-service" style="background-image: url('./listingimages/pie3.jpg');"></div>
+        <div class="gallery-item-service" style="background-image: url('./listingimages/pie2.jpg');"></div>
+        <div class="gallery-item-service" style="background-image: url('./listingimages/pie4.jpg');"></div>
+
+    </div>
+
+<!--Price & rating-->
+    <div class="price-section">
+        <div class="price"> $40 Whole Pie & $10 Per Slice </div>
+        <div class="rating-service">
+                <span class="rating-number-service">4.5</span>
+                <span class="rating-count-service">(1,203 Ratings)</span>
+        </div>
+    </div>
+
+<!--Description-->
+    <div class="description-service">
+        <p> Welcome to my bakery (kind of)! Your one-stop shop for delicious, homemade pies right here at Columbia University! Whether you're pulling an all-nighter or just craving something sweet between classes, we've got you covered with our mouth-watering pie selection. Freshly baked and perfect for sharing (or not), these pies are made with love just for you, Columbia students! 💙</p>
+        <p> Order at least 1 day in advance (I am a college student too, so we totally get it if you're in a rush!). For larger orders, give me a heads up a week before! ⏰ I don't do delivery. All pick-ups will be at Wein Hall. You won’t regret it! 😋 </p>
+        <p> Current Flavors: Apple, Chocolate Cream, Pumpkin, Blueberry, Pecan, Key Lime, and S'mores! </p>
+        <p> Payment Methods: Cash, Zelle, PayPal, and Venmo. </p>
+    </div>
+
+<!--Seller Information-->
+        <div class="seller-section">
+            <h2 class="seller-header">Seller Information</h2>
+            <div class="seller-info-service">
+                <img src="profilelogo2.png" alt="Madeline Cortes" class="seller-profile-service">
+                <div class="seller-details">
+                    <h2>Madeline Cortes</h2>
+                    <p>Junior at Columbia College</p>
+                </div>
+                <span class="chevron">›</span>
+            </div>
+        </div>
+    
+</div>
+
+
+<script src="navbar.js"></script>
+<script src="eachlisting.js"></script>
+
+  </script>
+
+</body>
+</html>

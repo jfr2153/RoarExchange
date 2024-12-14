@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Profile Page</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="nav">
+        <div class="nav-item logo">
+          <a href="homepage.html">
+            <img src="logo.png" alt="Logo" class="logo-img">
+          </a>
+        </div>
+        <div class="nav-item profile">
+          <div class="dropdown">
+            <img src="profile-icon.png" alt="Profile" class="profile-img" id="profileIcon">
+            <ul class="dropdown-menu" id="dropdownMenu">
+              <li><a href="profilepage.html">Profile</a></li>
+              <li><a href="historypage.html">History</a></li>
+              <li><a href="mylistings.html">Postings</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container-profile">
+        <!-- Welcome Section -->
+        <div class="welcome">
+            <h1>Hello, Jane Doe!</h1>
+        </div>
+
+        <hr class="section-divider-profile">
+        
+        
+
+        <!-- My Postings -->
+        <div class="section">
+            <h2>My Listings</h2>
+            <div class="profile-grid">
+                <!-- Card 1 -->
+                    <div class="profile-card">
+                        <a href="janedoelisting.html">
+                        <div class="profile-card-image" style="background-image: url('./listingimages/nailart1.jpg');"></div>
+                        <div class="profile-card-content">
+                            <div class="card-text-user"> @janedoe </div>
+                            <div class="card-text"> Glam Nails by Jane </div>
+                            <div class="card-text-small"> Elevate your style with custom nail art! </div>
+                            <span class="service-icon"><br> 🪞 </span> <!--can change depending on categories; use if/else statement?-->
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="navbar.js"></script>
+</body>
+</html>

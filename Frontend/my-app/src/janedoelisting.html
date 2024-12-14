@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!--Navbar-->
+<nav class="nav">
+  <div class="nav-item logo">
+    <a href="homepage.html">
+      <img src="logo.png" alt="Logo" class="logo-img">
+    </a>
+  </div>
+  <div class="nav-item profile">
+    <div class="dropdown">
+      <img src="profile-icon.png" alt="Profile" class="profile-img" id="profileIcon">
+      <ul class="dropdown-menu" id="dropdownMenu">
+        <li><a href="profilepage.html">Profile</a></li>
+        <li><a href="historypage.html">History</a></li>
+        <li><a href="mylistings.html">Postings</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--Header-->
+<div class="container-service">
+    <div class="listing-header-service">
+        <div>
+            <h1 class="listing-title-service">
+                Glam Nails by Jane
+                <span class="location">  📍 John Jay Hall</span>
+            </h1>
+        </div>
+        <div class="timestamp">21 Hours Ago</div>
+    </div>
+
+<!--Images-->
+    <div class="gallery-service">
+        <div class="gallery-item-service" style="background-image: url('./listingimages/nailart1.jpg');"></div>
+        <div class="gallery-item-service" style="background-image: url('./listingimages/nailart2.jpg');"></div>
+        <div class="gallery-item-service" style="background-image: url('./listingimages/nailart3.jpg');"></div>
+
+    </div>
+
+<!--Price & rating-->
+    <div class="price-section">
+        <div class="price">Prices Vary</div>
+        <div class="rating-service">
+            <a href="rating.html">
+                <span class="rating-number-service">4.0</span>
+            </a>
+            <a href="rating.html">
+                <span class="rating-count-service">(344 Ratings)</span>
+            </a>
+        </div>
+    </div>
+    
+
+<!--Description-->
+    <div class="description-service">
+        <p>Elevate your style with custom nail art and professional care! Offering hand-painted designs, gel manicures, and natural nail services in a cozy, self-run studio. Book your appointment for a personalized and relaxing experience that makes your nails shine as brightly as you do.</p>
+        <p>  Prices vary depending on design. I require a $10 deposit before we begin! I accept cash, Venmo, Paypal, and Zelle. Book an appointment by contacting me personally.  </p>
+    </div>
+
+<!--Seller Information-->
+    <a href="profilepage.html">
+        <div class="seller-section">
+            <h2 class="seller-header">Seller Information</h2>
+            <div class="seller-info-service">
+                <img src="profile-icon.png" alt="Jane Doe" class="seller-profile-service">
+                <div class="seller-details">
+                    <h2>Jane Doe</h2>
+                    <p>Sophomore at Columbia College</p>
+                </div>
+                <span class="chevron">›</span>
+            </div>
+        </div>
+    </a>
+    
+</div>
+
+
+<script src="navbar.js"></script>
+</body>
+</html>
