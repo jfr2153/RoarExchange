@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Profile Page</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="nav">
+        <div class="nav-item logo">
+          <a href="homepage.html">
+            <img src="logo.png" alt="Logo" class="logo-img">
+          </a>
+        </div>
+        <div class="nav-item profile">
+          <div class="dropdown">
+            <img src="profile-icon.png" alt="Profile" class="profile-img" id="profileIcon">
+            <ul class="dropdown-menu" id="dropdownMenu">
+              <li><a href="profilepage.html">Profile</a></li>
+              <li><a href="historypage.html">History</a></li>
+              <li><a href="mylistings.html">Postings</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container-profile">
+        <!-- Welcome Section -->
+        <div class="welcome">
+            <h1>Hello, Jane Doe!</h1>
+        </div>
+
+        <hr class="section-divider-profile">
+        
+        
+
+        <!-- Past Orders Section -->
+        <div class="section">
+            <h2>Previous Product Orders</h2>
+            <div class="profile-grid">
+                <!-- Card 1 -->
+                <div class="profile-card">
+                    <div class="profile-card-image" style="background-image: url('./listingimages/jacket.jpg');"></div>
+                    <div class="profile-card-content">
+                        <div class="card-text-user"> @davidthelion3 </div>
+                        <div class="card-text">Yankees Vintage Jacket</div>
+                        <div class="card-text-small"> Owned for 2 years. Size M. Runs large. $150 but hmu to negotiate or smt. </div>
+                        <span class="service-icon"><br> 👕 🪞 </span> <!--can change depending on categories; use if/else statement?-->
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="profile-card">
+                    <div class="profile-card-image" style="background-image: url('./listingimages/bracelet.jpg');"></div>
+                    <div class="profile-card-content">
+                        <div class="card-text-user"> @roseypine </div>
+                        <div class="card-text"> Silver Dior Bracelet </div>
+                        <div class="card-text-small"> $250. Fits on a variety of wrists but feel free to reach out if you want to try it on before purchasing! </div>
+                        <span class="service-icon"><br> 👕 </span> <!--can change depending on categories; use if/else statement?-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Past Services Section -->
+        <div class="section">
+            <h2>Previous Service Orders</h2>
+            <div class="profile-grid">
+                <!-- Card 1 -->
+                <div class="profile-card">
+                    <div class="profile-card-image" style="background-image: url('./listingimages/pie.jpg');"></div>
+                    <div class="profile-card-content">
+                        <div class="card-text-user"> @madeline32 </div>
+                        <div class="card-text">Madé's Pies 🥧</div>
+                        <div class="card-text-small"> Got a sweet tooth? I serve the best pies @ Columbia! Now serving s'mores pie! </div>
+                        <span class="service-icon"><br> 🍴 </span> <!--can change depending on categories; use if/else statement?-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Saved Items</h2>
+            <div class="profile-grid">
+                <!-- Card 1 -->
+                <div class="profile-card">
+                    <div class="profile-card-image" style="background-image: url('./listingimages/pie.jpg');"></div>
+                    <div class="profile-card-content">
+                        <div class="card-text-user"> @madeline32 </div>
+                        <div class="card-text">Madé's Pies 🥧</div>
+                        <div class="card-text-small"> Got a sweet tooth? I serve the best pies @ Columbia! Now serving s'mores pie! </div>
+                        <span class="service-icon"><br> 🍴 </span> <!--can change depending on categories; use if/else statement?-->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="navbar.js"></script>
+</body>
+</html>
