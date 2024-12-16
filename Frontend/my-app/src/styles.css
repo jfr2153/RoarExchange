@@ -1,3 +1,15 @@
+/* Global CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
 /* Body styles (no font added yet) */
 body {
   margin: 0;
@@ -192,10 +204,12 @@ input[type="text"], select, textarea {
   .nav {
     position: fixed;
     top: 0;
-    width: 100%;
+    left: 0;
+    width: 100%; /* Full width */
     background: #A8D5EC;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 2px 0;
     border-bottom: 1px solid #ddd;
     z-index: 1000;
@@ -224,7 +238,7 @@ input[type="text"], select, textarea {
   /* Dropdown menu fro prof pic */
 .dropdown-menu {
   list-style: none;
-  padding: 0;
+  padding: 10px 0;
   margin: 0;
   position: absolute;
   top: 100%; 
@@ -233,7 +247,7 @@ input[type="text"], select, textarea {
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: none; 
+  display: block; 
 }
 
 .dropdown-menu li {
@@ -255,6 +269,19 @@ input[type="text"], select, textarea {
   display: block;
 }
 
+/* Force scrollbar to prevent layout shift */
+html {
+  overflow-y: scroll; /* Always show vertical scrollbar */
+}
+
+/* Reset body and html margins */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
   
 
 /* Homepage */

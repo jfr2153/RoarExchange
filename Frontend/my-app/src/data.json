@@ -1,0 +1,30 @@
+[
+    {
+      "id": "pie",
+      "title": "Madé's Pies 🥧",
+      "user": "@madeline32",
+      "description": "Got a sweet tooth? I serve the best pies @ Columbia! Now serving s'mores pie & keylime pie.",
+      "image": "./listingimages/pie.jpg"
+    },
+    {
+      "id": "barber",
+      "title": "Mike's Barbershop 💈",
+      "user": "@notchefmike",
+      "description": "I'm not chef mike but I do cook in the salon (my room). Book fast. Slots are filling up quick.",
+      "image": "./listingimages/barber.jpg"
+    },
+    {
+      "id": "nailart",
+      "title": "Glam Nails by Jane",
+      "user": "@janedoe",
+      "description": "Elevate your style with custom nail art!",
+      "image": "./listingimages/nailart1.jpg"
+    },
+    {
+        "id": "rizzlessons",
+        "title": "Rizz Lessons 101",
+        "user": "@thatguy92",
+        "description": "Certified in Rizzology. I will teach you how to win someone over in 30 seconds or less. Trust the process. Invest in your love life.",
+        "image": "./listingimages/apple.jpg"
+    }
+  ]  
