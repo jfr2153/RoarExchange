@@ -67,6 +67,10 @@ function ListingForm() {
     const newService = {
       ...formData,
       id: newId, // Add the generated id
+      user: '@janedoe', // Automatically assign logged-in user
+      shortDescription: formData.shortDescription, // Ensure shortDescription is included
+      rating: 0,        // Default rating
+      totalRatings: 0,  // Default total ratings
     };
   
     // Retrieve existing services from LocalStorage or initialize an empty array

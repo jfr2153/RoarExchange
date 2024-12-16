@@ -12,7 +12,12 @@ function HistoryPage() {
   // Load saved items from localStorage when the component mounts
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem('savedItems')) || [];
-    setSavedItems(saved);
+    // Ensure shortDescription is included for all saved items
+    const updatedSaved = saved.map((item) => ({
+      ...item,
+      shortDescription: item.shortDescription || item.description || 'No description available.',
+    }));
+    setSavedItems(updatedSaved);
   }, []);
 
   // Function to toggle dropdown visibility

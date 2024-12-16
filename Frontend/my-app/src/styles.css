@@ -43,24 +43,35 @@ body {
   padding: 20px;
   margin-bottom: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px; /* Adds small spacing between items */
+}
+
+.rating-box h1 {
+  margin: 0 0 50px 0; /* Add 10px margin below the Ratings title */
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .rating-score {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin: 30px 0; /* Add spacing above and below the score */
 }
 
 .stars {
   font-size: 20px;
   color: #87CEEB;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .rating-count {
   color: #666;
   font-size: 14px;
 }
+
 
 /* Rating Bars Styles */
 .rating-bars {
@@ -671,7 +682,7 @@ p {
 .rating-service {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .rating-number-service {
@@ -681,6 +692,17 @@ p {
 
 .rating-count-service {
   color: #0066cc;
+}
+
+.rating-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.star {
+  color: #f5a623; /* Gold color for the star */
+  font-size: 16px; /* Adjust the size of the star */
+  margin-right: 5px; /* Space between the star and rating count */
 }
 
 .description-service {
@@ -731,6 +753,27 @@ p {
   position: absolute;
   right: 20px;
   font-size: 1.5em;
+}
+
+/* Make the entire seller section clickable and visually clear */
+.seller-info-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+}
+
+.seller-info-service:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add hover effect */
+  transform: translateY(-2px); /* Slight lift on hover */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.chevron {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.seller-info-service:hover .chevron {
+  color: #333; /* Darken chevron on hover */
+  transform: translateX(5px); /* Move chevron slightly to the right */
 }
 
 /*removes underlines from navigation text*/

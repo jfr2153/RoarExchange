@@ -1,16 +1,32 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles.css';
+import nailartImage from '../listingimages/nailart1.jpg'; // Import hardcoded image
 
 function MyListingsPage() {
   const [myListings, setMyListings] = useState([]);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
+  // Hardcoded default service for @janedoe
+  const hardcodedService = {
+    id: 'nailart',
+    title: 'Glam Nails by Jane',
+    user: '@janedoe',
+    description: 'Elevate your style with custom nail art!',
+    shortDescription: 'Elevate your style with custom nail art!',
+    price: '$30 per session',
+    location: 'East Dorm',
+    image: nailartImage,
+  };
+
   useEffect(() => {
     // Fetch user-created listings from localStorage
     const storedServices = JSON.parse(localStorage.getItem('services')) || [];
-    const userListings = storedServices.filter((service) => service.user === '@janedoe'); // Filter by user
-    setMyListings(userListings);
+    const userListings = storedServices.filter((service) => service.user === '@janedoe');
+
+    // Ensure the hardcoded service always appears
+    const uniqueListings = [hardcodedService, ...userListings];
+    setMyListings(uniqueListings);
   }, []);
 
   // Toggle dropdown visibility

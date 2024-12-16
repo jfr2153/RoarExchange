@@ -6,6 +6,9 @@ import ProfilePage from './pages/profilepage';
 import ListingForm from './pages/listingform';
 import HistoryPage from './pages/historypage'; 
 import MyListingsPage from './pages/mylistingspage';
+import SellerInfoPage from './pages/sellerinfopage';
+import RatingsPage from './pages/ratingspage';
+
 
 
 
@@ -19,6 +22,8 @@ function App() {
         <Route path="/listingform" element={<ListingForm />} />
         <Route path="/history" element={<HistoryPage />} /> 
         <Route path="/mylistings" element={<MyListingsPage />} />
+        <Route path="/seller/:username" element={<SellerInfoPage />} />
+        <Route path="/ratings" element={<RatingsPage />} />
       </Routes>
     </Router>
   );

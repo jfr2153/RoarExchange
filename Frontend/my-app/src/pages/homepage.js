@@ -173,7 +173,9 @@ function Homepage() {
                 ></div>
                 <div className="card-text-user">{service.user}</div>
                 <div className="card-text">{service.title}</div>
-                <div className="card-text-small">{service.description}</div>
+                <div className="card-text-small">{service.description}
+                    {service.shortDescription || 'No description available.'}
+                </div>
               </div>
             </Link>
           ))
